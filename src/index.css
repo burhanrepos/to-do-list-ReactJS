@@ -1,0 +1,167 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+}
+#root{
+    width: 500px;
+    max-height: 500px;
+    height: 500px;
+    background-color: darkblue;
+    margin: 3%;
+    padding: 2% 1%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+    position: relative;
+}
+ul,li{
+  list-style-type: none;
+  color: white;
+}
+.item{
+  display: flex;
+  border:transparent;
+  width: auto ;
+  width: 470px;
+  height: 2rem;
+  margin-bottom:5px;  
+}
+.list {
+  padding: 0;
+  max-height: 17em; /* 1.5 x 3 */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+input{
+  width: 330px;
+  height: 30px;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: center;
+  font-size: 105%;
+  outline: none;
+  margin-bottom:20px;
+  border: transparent;
+  margin-right: 0px;
+  color: black;
+}
+.add-btn{
+  width: 110px;
+  height: 30px;
+ border-radius: 2px;
+ border-top-left-radius: 0px;
+ border-bottom-left-radius: 0px;
+ color: white;
+ background-color: red;
+ border: transparent;
+ margin-left: 0px;
+}
+.delete-btn{
+  display: block;
+  /* width: 30%; */
+  height:2rem;
+  background-color: yellow;
+ border-radius: 2px;
+ margin-right: 4px;
+ padding-right: 2px;
+ color: black;
+ border: transparent;
+ border-top: transparent;
+ border-bottom: transparent;
+ border-left: transparent;
+ transition: font-size .2s ease-in-out;
+ /* position: absolute; */
+ float: right;
+ width: 20%;
+ margin-right: 30px;
+ font-weight: bold;
+ float: right;
+}
+li{
+  width: 100%;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+.add-btn:hover ,.delete-btn:hover{
+  font-size: 1rem;
+  box-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 15px red;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+.clear{
+  color: white;
+  padding: 5px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 105%;
+  right:48px;
+  font-weight: 400;
+  border: transparent;
+  background-color: red;
+}
+.clear:hover{
+  background-color: skyblue;
+  color: black;
+  border-radius: 2px;
+  cursor: pointer;
+  padding-inline-end: 5px;
+  padding-inline-start: 5px;
+  border: 2px solid white;
+}
+@media only screen and (max-width:600px){
+  #root{
+    width: 300px;
+    height: 450px;
+    background-color: darkblue;
+    padding: 2% 1%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+    position: relative;
+}
+input{
+  width: 70%;
+}
+.add-btn{
+  width: 30%;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  border:transparent;
+  width: auto ;
+  width: 100%;
+  height: 2rem;
+  margin-bottom:5px;  
+}
+li{
+  list-style-type: none;
+  margin-right: 2px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 1.4rem;
+  display: inline-block;
+  color: white;
+  background-color: darkblue;
+}
+
+.delete-btn{
+  float: right;
+ /* position: absolute; */
+ margin-right: 5px;
+ float: right;
+ width: 20%;
+}
+}
